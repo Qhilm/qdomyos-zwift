@@ -1654,8 +1654,6 @@ void homeform::trainProgramSignals() {
                     &treadmill::changeFanSpeed);
             connect(trainProgram, &trainprogram::changeInclination, ((treadmill *)bluetoothManager->device()),
                     &treadmill::changeInclination);
-            connect(trainProgram, &trainprogram::changeSpeedAndInclination, ((treadmill *)bluetoothManager->device()),
-                    &treadmill::changeSpeedAndInclination);
             connect(trainProgram, &trainprogram::intervalTransitionApplied, ((treadmill *)bluetoothManager->device()),
                     &treadmill::onTrainingProgramTransition);
             connect(((treadmill *)bluetoothManager->device()), &treadmill::tapeStarted, trainProgram,

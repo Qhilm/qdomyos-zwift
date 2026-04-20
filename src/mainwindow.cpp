@@ -313,8 +313,6 @@ void MainWindow::trainProgramSignals() {
                 &treadmill::changeSpeed);
         connect(trainProgram, &trainprogram::changeInclination, ((treadmill *)bluetoothManager->device()),
                 &treadmill::changeInclination);
-        connect(trainProgram, &trainprogram::changeSpeedAndInclination, ((treadmill *)bluetoothManager->device()),
-                &treadmill::changeSpeedAndInclination);
         connect(trainProgram, &trainprogram::changeResistance, ((bike *)bluetoothManager->device()),
                 &bike::changeResistance);
         connect(((treadmill *)bluetoothManager->device()), &treadmill::tapeStarted, trainProgram,
