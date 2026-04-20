@@ -8127,6 +8127,7 @@ void homeform::trainprogram_open_clicked(const QUrl &fileName) {
             }
             if (trainProgram) {
                 delete trainProgram;
+                trainProgram = nullptr;
             }
 
             trainProgram = trainprogram::load(file.fileName(), bluetoothManager, file.fileName().right(3).toUpper());
@@ -8222,6 +8223,7 @@ void homeform::trainprogram_preview(const QUrl &fileName) {
 
 void homeform::trainprogram_zwo_loaded(const QString &s) {
     qDebug() << QStringLiteral("trainprogram_zwo_loaded") << s;
+    delete trainProgram;
     trainProgram = new trainprogram(zwiftworkout::loadJSON(s), bluetoothManager);
     if (trainProgram) {
         QJsonDocument doc = QJsonDocument::fromJson(s.toUtf8());
@@ -8425,6 +8427,7 @@ void homeform::gpx_open_clicked(const QUrl &fileName) {
             if (trainProgram) {
 
                 delete trainProgram;
+                trainProgram = nullptr;
             }
 
             // KML to GPX https://www.gpsvisualizer.com/elevation
