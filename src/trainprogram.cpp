@@ -530,7 +530,7 @@ double trainprogram::avgAzimuthNext300Meters() {
 }
 
 void trainprogram::clearRows() {
-    QMutexLocker(&this->schedulerMutex);
+    QMutexLocker locker(&this->schedulerMutex);
     rows.clear();
 }
 
@@ -597,7 +597,7 @@ void trainprogram::pelotonOCRcomputeTime(QString t) {
 
 void trainprogram::scheduler() {
 
-    QMutexLocker(&this->schedulerMutex);
+    QMutexLocker locker(&this->schedulerMutex);
     QSettings settings;
     QDateTime now = QDateTime::currentDateTime();
     qint64 msecsElapsed = lastSchedulerCall.msecsTo(now);
