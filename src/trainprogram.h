@@ -196,6 +196,7 @@ private slots:
     lockscreen *h = 0;
 #endif
 
+    ~trainprogram();
 };
 
 #endif // TRAINPROGRAM_H

@@ -1993,3 +1993,9 @@ double trainprogram::totalDistance() {
     }
     return distance;
 }
+
+trainprogram::~trainprogram() {
+    delete zwift_auth_token;
+    delete zwift_world;
+    delete h;
+}
