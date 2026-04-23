@@ -23,6 +23,7 @@ SOURCES += \
         GarminConnect/garminconnecttestsuite.cpp \
         ToolTests/qfittestsuite.cpp \
         ToolTests/testsettingstestsuite.cpp \
+        ToolTests/trainprogrammutextestsuite.cpp \
         ToolTests/testtrainingloadtestsuite.cpp \
         Tools/testsettings.cpp \
         Tools/typeidgenerator.cpp \
@@ -62,6 +63,7 @@ HEADERS += \
     GarminConnect/garminconnecttestsuite.h \
     ToolTests/qfittestsuite.h \
     ToolTests/testsettingstestsuite.h \
+    ToolTests/trainprogrammutextestsuite.h \
     ToolTests/testtrainingloadtestsuite.h \
     Tools/devicetypeid.h \
     Tools/testsettings.h \
