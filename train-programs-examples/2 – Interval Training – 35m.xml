@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rows>
     <!-- Warm-up walk -->
-    <row duration="00:03:00" speed="5.5" inclination="0" forcespeed="1">
-        <textevent timeoffset="10" message="HR 100-120 – Activez votre tronc."/>
+    <row duration="00:03:00" inclination="0" zonehr="1" looptimehr="5" minspeed="5.0" maxspeed="6.5">
+        <textevent timeoffset="10" message="Zone 1"/>
     </row>
-    <!-- Set initial speed before enabling HR zone control -->
-    <row duration="00:00:05" speed="7.5" inclination="0" forcespeed="1">
-    </row>
-    <row duration="00:03:55" inclination="0" zonehr="2" looptimehr="5" minspeed="6.0" maxspeed="9.0">
+    <row duration="00:03:55" inclination="1" zonehr="2" looptimehr="5" minspeed="6.0" maxspeed="9.0">
         <textevent timeoffset="5" message="Zone 2"/>
     </row>
     <!-- Interval block: 6 x (90s hard / 90s recovery) -->
@@ -15,31 +12,20 @@
         <!-- Set initial speed before enabling HR zone control -->
         <row duration="00:00:05" speed="11.5" inclination="1" forcespeed="1">
         </row>
-        <row duration="00:01:25" inclination="1" zonehr="4" looptimehr="5" minspeed="10.0" maxspeed="13.0">
+        <row duration="00:01:25" inclination="1" zonehr="4" looptimehr="5" minspeed="10.0" maxspeed="14.0">
             <textevent timeoffset="5" message="Zone 4"/>
         </row>
         <!-- Set initial speed before enabling HR zone control -->
-        <row duration="00:00:05" speed="6.8" inclination="0" forcespeed="1">
+        <row duration="00:00:05" speed="8.0" inclination="0" forcespeed="1">
         </row>
-        <row duration="00:01:25" inclination="0" zonehr="2" looptimehr="5" minspeed="5.5" maxspeed="8.0">
+        <row duration="00:01:25" inclination="0" zonehr="2" looptimehr="5" minspeed="7.5" maxspeed="8.5">
             <textevent timeoffset="5" message="Zone 2"/>
         </row>
     </repeat>
-
-    <!-- Set initial speed before enabling HR zone control -->
-    <row duration="00:00:05" speed="8.5" inclination="1" forcespeed="1">
-    </row>
-    <row duration="00:04:55" inclination="1" zonehr="2" looptimehr="10" minspeed="7.0" maxspeed="10.0">
+    <row duration="00:03:35" inclination="1" zonehr="2" looptimehr="10" minspeed="7.0" maxspeed="10.0">
         <textevent timeoffset="5" message="Zone 2 – Bon travail sur les intervalles !"/>
     </row>
-
-    <!-- Set initial speed before enabling HR zone control -->
-    <row duration="00:00:05" speed="7.0" inclination="0" forcespeed="1">
-    </row>
-    <row duration="00:02:55" inclination="0" zonehr="1" looptimehr="10" minspeed="5.0" maxspeed="9.0">
+    <row duration="00:05:00" inclination="0" zonehr="1" looptimehr="10" minspeed="5.0" maxspeed="6.5">
         <textevent timeoffset="5" message="Zone 1"/>
-    </row>
-    <row duration="00:02:00" speed="5.0" inclination="0" forcespeed="1">
-        <textevent timeoffset="5" message="Terminé ! Roulez vos fessiers au rouleau de mousse."/>
     </row>
 </rows>
