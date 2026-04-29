@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rows>
+    <!-- Warm-up walk -->
+    <row duration="00:03:00" speed="5.5" inclination="0" forcespeed="1">
+        <textevent timeoffset="10" message="Zone 1 – Activez doucement votre tronc."/>
+    </row>
+    <!-- Set initial speed before enabling HR zone control -->
+    <row duration="00:00:05" speed="6.8" inclination="0" forcespeed="1">
+    </row>
+    <row duration="00:01:55" inclination="0" zonehr="1" looptimehr="10" minspeed="5.5" maxspeed="8.0">
+        <textevent timeoffset="5" message="Zone 1"/>
+    </row>
+    <!-- Stabilization: Hold current speed while HR controller cycle completes, to prevent race conditions in next row -->
+    <row duration="00:00:11" />
+    <!-- Easy run - Zone 2 -->
+    <!-- Set initial speed before enabling HR zone control -->
+    <row duration="00:00:05" speed="8.5" inclination="1" forcespeed="1">
+    </row>
+    <row duration="00:09:55" inclination="1" zonehr="2" looptimehr="10" minspeed="7.0" maxspeed="10.0">
+        <textevent timeoffset="5" message="Zone 2"/>
+    </row>
+    <!-- Stabilization: Hold current speed while HR controller cycle completes, to prevent race conditions in next row -->
+    <row duration="00:00:11" />
+    <!-- Set initial speed before enabling HR zone control -->
+    <row duration="00:00:05" speed="8.5" inclination="1" forcespeed="1">
+    </row>
+    <row duration="00:09:55" inclination="1" zonehr="2" looptimehr="10" minspeed="7.0" maxspeed="10.0">
+        <textevent timeoffset="5" message="Zone 2 – gardez le dos droit"/>
+    </row>
+    <!-- Stabilization: Hold current speed while HR controller cycle completes, to prevent race conditions in next row -->
+    <row duration="00:00:11" />
+    <!-- Cool-down -->
+    <!-- Set initial speed before enabling HR zone control -->
+    <row duration="00:00:05" speed="7.3" inclination="0" forcespeed="1">
+    </row>
+    <row duration="00:02:55" inclination="0" zonehr="1" looptimehr="10" minspeed="5.5" maxspeed="9.0">
+        <textevent timeoffset="5" message="Zone 1"/>
+    </row>
+    <!-- Stabilization: Hold current speed while HR controller cycle completes, to prevent race conditions in next row -->
+    <row duration="00:00:11" />
+    <row duration="00:02:00" speed="5.0" inclination="0" forcespeed="1">
+        <textevent timeoffset="5" message="Zone 1 – Bravo ! Étirez vos ischio-jambiers après."/>
+    </row>
+</rows>
