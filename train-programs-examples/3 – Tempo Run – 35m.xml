@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rows>
+    <!-- Warm-up -->
+    <!-- Set initial speed before enabling HR zone control -->
+    <row duration="00:00:05" speed="5.5" inclination="0" forcespeed="1"/>
+    <row duration="00:02:55" inclination="0" zonehr="1" minspeed="5.5" maxspeed="6.5">
+        <textevent timeoffset="10" message="Zone 1 – Respirations profondes, engagez le tronc."/>
+    </row>
+    <row duration="00:03:00" inclination="1" zonehr="2" minspeed="6.0" maxspeed="9.5">
+        <textevent timeoffset="5" message="Zone 2"/>
+    </row>
+    <!-- Tempo block - Zone 3 -->
+    <row duration="00:25:00" inclination="1" zonehr="3" minspeed="9.0" maxspeed="12.0">
+        <textevent timeoffset="5" message="Zone 3 – Trouvez votre rythme tempo"/>
+    </row>
+    <!-- Cool-down -->
+    <row duration="00:02:00" inclination="1" zonehr="2" minspeed="8" maxspeed="10.0">
+        <textevent timeoffset="5" message="Zone 2"/>
+    </row>
+    <row duration="00:02:00" inclination="0" zonehr="1" minspeed="5.5" maxspeed="7.0">
+        <textevent timeoffset="5" message="Zone 1 – Excellent tempo !"/>
+    </row>
+</rows>

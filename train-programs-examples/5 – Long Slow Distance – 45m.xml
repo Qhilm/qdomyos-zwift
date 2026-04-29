@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rows>
+    <!-- Warm-up walk -->
+    <!-- Set initial speed before enabling HR zone control -->
+    <row duration="00:00:05" speed="5.5" inclination="0" forcespeed="1"/>
+    <row duration="00:02:55" inclination="0" zonehr="1" looptimehr="10" minspeed="5.5" maxspeed="6.5">
+        <textevent timeoffset="5" message="Zone 1 – Sortie longue aujourd'hui"/>
+    </row>
+    <!-- Warm-up ramp -->
+    <row duration="00:04:00" inclination="1" zonehr="1" looptimehr="10" minspeed="6.0" maxspeed="8.5">
+        <textevent timeoffset="5" message="Zone 1"/>
+    </row>
+    <!-- Main run - Zone 2 throughout -->
+    <row duration="00:33:00" inclination="1" zonehr="2" looptimehr="10" minspeed="7.0" maxspeed="10.0">
+        <textevent timeoffset="5" message="Zone 2"/>
+    </row>
+    <!-- Cool-down -->
+    <row duration="00:03:00" inclination="1" zonehr="1" looptimehr="10" minspeed="5.5" maxspeed="9.0">
+        <textevent timeoffset="5" message="Zone 1"/>
+    </row>
+    <row duration="00:02:00" inclination="0" zonehr="1" looptimehr="10" minspeed="5.5" maxspeed="6.5">
+        <textevent timeoffset="5" message="Zone 1 – Excellent travail d'endurance ! Étirez-vous bien"/>
+    </row>
+</rows>
