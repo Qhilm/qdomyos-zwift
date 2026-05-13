@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rows>
-    <row duration="00:00:05" speed="5.5" inclination="0" forcespeed="1"/>
-    <!-- Warm-up jog -->
-    <row duration="00:06:00" inclination="1" zonehr="1" minspeed="6.5" maxspeed="10.0">
+    <row duration="00:00:30" speed="5.5" inclination="0" forcespeed="1"/>
+    <!-- zonehr 1 is not usable for HR PID -->
+    <row duration="00:05:30" speed="8.0" inclination="1" forcespeed="1">
         <textevent timeoffset="5" message="Zone 1"/>
     </row>
     <!-- Progressive blocks -->
