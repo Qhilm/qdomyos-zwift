@@ -2,16 +2,16 @@
 <rows>
     <!-- Warm-up walk -->
     <row duration="00:03:00" speedfrom="5.0" speedto="8.0" inclination="1" forcespeed="1"/>
-    <row duration="00:03:55" inclination="1" zonehr="2" looptimehr="5" minspeed="6.0" maxspeed="9.0"/>
+    <row duration="00:04:00" inclination="1" zonehr="2" looptimehr="5" minspeed="6.0" maxspeed="9.0"/>
     <!-- Interval block: 6 x (90s hard / 90s recovery) -->
     <repeat times="6">
         <!-- Set initial speed before enabling HR zone control -->
         <row duration="00:00:05" speed="11.5" inclination="1" forcespeed="1"/>
-        <row duration="00:01:25" inclination="1" zonehr="4" looptimehr="5" minspeed="10.0" maxspeed="14.0"/>
+        <row duration="00:01:30" inclination="1" zonehr="4" looptimehr="5" minspeed="10.0" maxspeed="14.0"/>
         <!-- Set initial speed before enabling HR zone control -->
         <row duration="00:00:05" speed="8.0" inclination="0" forcespeed="1"/>
-        <row duration="00:01:25" inclination="0" zonehr="2" looptimehr="5" minspeed="7.5" maxspeed="8.5"/>
+        <row duration="00:01:30" inclination="0" zonehr="2" looptimehr="5" minspeed="7.5" maxspeed="8.5"/>
     </repeat>
-    <row duration="00:03:35" inclination="1" zonehr="2" looptimehr="10" minspeed="7.0" maxspeed="10.0"/>
+    <row duration="00:04:00" inclination="1" zonehr="2" looptimehr="10" minspeed="7.0" maxspeed="10.0"/>
     <row duration="00:05:00" speed="5.0" forcespeed="1"/>
 </rows>
