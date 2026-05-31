@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rows>
     <!-- Warm-up walk -->
-    <row duration="00:03:00" speedfrom="5.0" speedto="8.0" inclination="1" forcespeed="1"/>
+    <row duration="00:03:00" speedfrom="5.0" speedto="8.0" inclination="1" zonehr="0" forcespeed="1"/>
     <row duration="00:04:00" inclination="1" zonehr="2" looptimehr="5" minspeed="6.0" maxspeed="9.0"/>
     <!-- Interval block: 6 x (90s hard / 90s recovery) -->
     <repeat times="6">
@@ -13,5 +13,5 @@
         <row duration="00:01:30" inclination="0" zonehr="2" looptimehr="5" minspeed="7.5" maxspeed="8.5"/>
     </repeat>
     <row duration="00:04:00" inclination="1" zonehr="2" looptimehr="10" minspeed="7.0" maxspeed="10.0"/>
-    <row duration="00:05:00" speed="5.0" forcespeed="1"/>
+    <row duration="00:05:00" speed="5.0" zonehr="0" forcespeed="1"/>
 </rows>

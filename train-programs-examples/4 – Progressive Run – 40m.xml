@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rows>
-    <row duration="00:06:00" speedfrom="5.0" speedto="8.0" inclination="1" forcespeed="1"/>
+    <row duration="00:06:00" speedfrom="5.0" speedto="8.0" inclination="1" zonehr="0" forcespeed="1"/>
     <!-- Phase 2 -->
     <row duration="00:09:00" inclination="1" zonehr="2" minspeed="7.0" maxspeed="11.0"/>
     <!-- Phase 3 -->
@@ -13,5 +13,5 @@
     <row duration="00:00:05" speed="8.0" inclination="1" forcespeed="1"/>
     <row duration="00:02:25" inclination="1" zonehr="2" minspeed="7.0" maxspeed="9.0"/>
     <!-- Cool-down -->
-    <row duration="00:04:30" speed="5.5" inclination="0" forcespeed="1"/>
+    <row duration="00:04:30" speed="5.5" inclination="0" zonehr="0" forcespeed="1"/>
 </rows>

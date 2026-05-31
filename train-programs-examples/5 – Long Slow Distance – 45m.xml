@@ -2,9 +2,9 @@
 <rows>
     <!-- Warm-up walk -->
     <!-- HR PID does not work for HR zone 1 -->
-    <row duration="00:05:00" speedfrom="5.0" speedto="8.0" inclination="1" forcespeed="1"/>
+    <row duration="00:05:00" speedfrom="5.0" speedto="8.0" inclination="1" zonehr="0" forcespeed="1"/>
     <!-- Main run - Zone 2 throughout -->
     <row duration="00:37:00" inclination="1" zonehr="2" looptimehr="10" minspeed="7.0" maxspeed="11.0"/>
     <!-- Cool-down -->
-    <row duration="00:03:00" speed="5.5" inclination="0" forcespeed="1"/>
+    <row duration="00:03:00" speed="5.5" inclination="0" zonehr="0" forcespeed="1"/>
 </rows>
